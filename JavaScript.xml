@@ -1,0 +1,12 @@
+<templateSet group="JavaScript">
+  <template name="run" value="#!/usr/bin/jjs -fv&#10;&#10;var cmd = &quot;docker run -d -p 8282:8080 --name heros robertbrem/heros&quot;&#10;$EXEC(cmd);&#10;print($OUT);&#10;print($ERR);" description="run script for docker" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="junit" value="&lt;dependency&gt;&#10;    &lt;groupId&gt;junit&lt;/groupId&gt;&#10;    &lt;artifactId&gt;junit&lt;/artifactId&gt;&#10;    &lt;version&gt;4.12&lt;/version&gt;&#10;    &lt;scope&gt;test&lt;/scope&gt;&#10;&lt;/dependency&gt;" description="add JUnit dep" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="MAVEN" value="true" />
+    </context>
+  </template>
+</templateSet>

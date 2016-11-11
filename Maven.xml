@@ -1,0 +1,7 @@
+<templateSet group="Maven">
+  <template name="cors" value="&lt;dependency&gt;&#10;&#9;&lt;groupId&gt;com.airhacks&lt;/groupId&gt;&#10;&#9;&lt;artifactId&gt;jaxrs-cors&lt;/artifactId&gt;&#10;&#9;&lt;version&gt;0.0.2&lt;/version&gt;&#10;&#9;&lt;scope&gt;compile&lt;/scope&gt;&#10;&lt;/dependency&gt;" description="CORS Filter" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="MAVEN" value="true" />
+    </context>
+  </template>
+</templateSet>

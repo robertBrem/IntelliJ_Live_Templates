@@ -1,0 +1,22 @@
+<templateSet group="user">
+  <template name="rulz" value="&lt;dependency&gt;&#10;    &lt;groupId&gt;com.airhacks.rulz&lt;/groupId&gt;&#10;    &lt;artifactId&gt;jaxrsclient&lt;/artifactId&gt;&#10;    &lt;version&gt;0.0.1&lt;/version&gt;&#10;    &lt;scope&gt;test&lt;/scope&gt;&#10;&lt;/dependency&gt;" description="Rulez Test Framework" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="MAVEN" value="true" />
+    </context>
+  </template>
+  <template name="jerseyclient" value="&lt;dependency&gt;&#10;    &lt;groupId&gt;org.glassfish.jersey.core&lt;/groupId&gt;&#10;    &lt;artifactId&gt;jersey-client&lt;/artifactId&gt;&#10;    &lt;version&gt;2.12&lt;/version&gt;&#10;    &lt;scope&gt;test&lt;/scope&gt;&#10;&lt;/dependency&gt;" description="Jersey Client Dependency" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="MAVEN" value="true" />
+    </context>
+  </template>
+  <template name="arquillianDM" value="&lt;dependencyManagement&gt;&#10;    &lt;dependencies&gt;&#10;        &lt;dependency&gt;&#10;            &lt;groupId&gt;org.jboss.arquillian&lt;/groupId&gt;&#10;            &lt;artifactId&gt;arquillian-bom&lt;/artifactId&gt;&#10;            &lt;version&gt;1.1.10.Final&lt;/version&gt;&#10;            &lt;scope&gt;import&lt;/scope&gt;&#10;            &lt;type&gt;pom&lt;/type&gt;&#10;        &lt;/dependency&gt;&#10;    &lt;/dependencies&gt;&#10;&lt;/dependencyManagement&gt;" description="Arquillian DependencyManagement" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="MAVEN" value="true" />
+    </context>
+  </template>
+  <template name="arquillian" value="&lt;dependency&gt;&#10;    &lt;groupId&gt;org.jboss.arquillian.junit&lt;/groupId&gt;&#10;    &lt;artifactId&gt;arquillian-junit-container&lt;/artifactId&gt;&#10;    &lt;scope&gt;test&lt;/scope&gt;&#10;&lt;/dependency&gt;&#10;&lt;dependency&gt;&#10;    &lt;groupId&gt;org.jboss.arquillian.graphene&lt;/groupId&gt;&#10;    &lt;artifactId&gt;arquillian-graphene&lt;/artifactId&gt;&#10;    &lt;type&gt;pom&lt;/type&gt;&#10;    &lt;version&gt;2.1.0.Alpha3&lt;/version&gt;&#10;    &lt;scope&gt;test&lt;/scope&gt;&#10;&lt;/dependency&gt;" description="Arquillian Dependencies" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="MAVEN" value="true" />
+    </context>
+  </template>
+</templateSet>
