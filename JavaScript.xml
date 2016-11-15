@@ -1,5 +1,5 @@
 <templateSet group="JavaScript">
-  <template name="run" value="#!/usr/bin/jjs -fv&#10;&#10;var cmd = &quot;docker run -d -p 8282:8080 --name heros robertbrem/heros&quot;&#10;$EXEC(cmd);&#10;print($OUT);&#10;print($ERR);" description="run script for docker" toReformat="false" toShortenFQNames="true">
+  <template name="nashorn" value="#!/usr/bin/jjs -fv&#10;&#10;" description="create a new Nashorn script" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="JAVA_SCRIPT" value="true" />
     </context>

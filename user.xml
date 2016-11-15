@@ -19,4 +19,14 @@
       <option name="MAVEN" value="true" />
     </context>
   </template>
+  <template name="jmeterplugin" value="&lt;plugin&gt;&#10;  &lt;groupId&gt;com.lazerycode.jmeter&lt;/groupId&gt;&#10;  &lt;artifactId&gt;jmeter-maven-plugin&lt;/artifactId&gt;&#10;  &lt;version&gt;2.0.3&lt;/version&gt;&#10;  &lt;configuration&gt;&#10;    &lt;propertiesUser&gt;&#10;      &lt;host&gt;${performancetest.webservice.host}&lt;/host&gt;&#10;      &lt;port&gt;${performancetest.webservice.port}&lt;/port&gt;&#10;    &lt;/propertiesUser&gt;&#10;  &lt;/configuration&gt;&#10;  &lt;executions&gt;&#10;    &lt;execution&gt;&#10;      &lt;id&gt;jmeter-tests&lt;/id&gt;&#10;      &lt;goals&gt;&#10;        &lt;goal&gt;jmeter&lt;/goal&gt;&#10;      &lt;/goals&gt;&#10;    &lt;/execution&gt;&#10;  &lt;/executions&gt;&#10;&lt;/plugin&gt;&#10;&lt;plugin&gt;&#10;  &lt;groupId&gt;com.lazerycode.jmeter&lt;/groupId&gt;&#10;  &lt;artifactId&gt;jmeter-analysis-maven-plugin&lt;/artifactId&gt;&#10;  &lt;version&gt;1.0.6&lt;/version&gt;&#10;  &lt;executions&gt;&#10;    &lt;execution&gt;&#10;      &lt;goals&gt;&#10;        &lt;goal&gt;analyze&lt;/goal&gt;&#10;      &lt;/goals&gt;&#10;      &lt;phase&gt;post-integration-test&lt;/phase&gt;&#10;    &lt;/execution&gt;&#10;  &lt;/executions&gt;&#10;  &lt;configuration&gt;&#10;    &lt;source&gt;${project.build.directory}/jmeter/results/*&lt;/source&gt;&#10;    &lt;targetDirectory&gt;${project.build.directory}/reports&lt;/targetDirectory&gt;&#10;  &lt;/configuration&gt;&#10;&lt;/plugin&gt;" description="JMeter Plugins" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="MAVEN" value="true" />
+    </context>
+  </template>
+  <template name="jmeterproperties" value="&lt;performancetest.webservice.host&gt;localhost&lt;/performancetest.webservice.host&gt;&#10;&lt;performancetest.webservice.port&gt;8282&lt;/performancetest.webservice.port&gt;" description="JMeter Properties" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="MAVEN" value="true" />
+    </context>
+  </template>
 </templateSet>
