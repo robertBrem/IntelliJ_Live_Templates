@@ -1,0 +1,7 @@
+<templateSet group="Android">
+  <template name="buildandpush" value="#!/usr/bin/jjs -fv&#10;&#10;var version = $ENV.VERSION;&#10;var username = $ENV.REGISTRY_USERNAME;&#10;var password = $ENV.REGISTRY_PASSWORD;&#10;var email = $ENV.REGISTRY_EMAIL;&#10;&#10;var registry = &quot;disruptor.ninja:30500&quot;;&#10;var image = &quot;robertbrem/battleapp&quot;;&#10;var completeImageName = registry + &quot;/&quot; + image + &quot;:&quot; + version;&#10;&#10;var dockerBuild = &quot;docker build -t &quot; + completeImageName + &quot; .&quot;;&#10;execute(dockerBuild);&#10;&#10;var dockerLogin = &quot;docker login --username=&quot; + username + &quot; --password=&quot; + password + &quot; --email=&quot; + email + &quot; &quot; + registry;&#10;execute(dockerLogin);&#10;&#10;var push = &quot;docker push &quot; + completeImageName;&#10;execute(push);&#10;&#10;function execute(command) {&#10;    $EXEC(command);&#10;    print($OUT);&#10;    print($ERR);&#10;}" description="Build and push a Docker image" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+</templateSet>
